@@ -1,14 +1,14 @@
-import Color.*;
-import Shape.*;
+import ElectronicDevice.*;
+import Remote.*;
 
 public class BridgeMain {
 
     public static void main(String[] args) {
-        Shape redCircle = new Circle(100,100,10, new RedColor());
-        Shape blueCircle = new Circle(100, 100, 10, new BlueColor());
+        Remote fan = new Controller(new Fan());
+        Remote television = new Controller(new Television());
 
-        redCircle.draw();
-        blueCircle.draw();
+        fan.turnOn();
+        television.turnOn();
 
 
     }
